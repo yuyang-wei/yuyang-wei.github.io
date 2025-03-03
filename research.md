@@ -16,4 +16,4 @@
 
 ### Thesis
 
-*   2023\. An investigation into the sentence-final particle _k<sup>h<\sup>ə<sup>24</sup>_ in Xiangzhou Mandarin. MA thesis, Guangdong University of Foreign Studies.
+*   2023\. An investigation into the sentence-final particle _k<sup>h</sup>ə<sup>24</sup>_ in Xiangzhou Mandarin. MA thesis, Guangdong University of Foreign Studies.
