@@ -1,4 +1,3 @@
-Yuyang WEI 韋雨陽 body { font-family: Arial, sans-serif; margin: 60px; padding: 30px; text-align: left; line-height: 1.6; } h1 { color: #333; } nav { margin-bottom: 20px; } nav a { margin-right: 15px; text-decoration: none; color: #007BFF; }
 
 [About](index.html) [Research](research.html) [Contact](contact.html)
 
