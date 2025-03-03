@@ -1,5 +1,5 @@
 
-[About](index.html) [Research](research.html) [Contact](contact.html)
+[About](index.md) [Research](research.md) [Contact](contact.md)
 
 # Yuyang WEI 韋雨陽
 
