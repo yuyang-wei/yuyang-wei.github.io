@@ -16,4 +16,4 @@ My research looks at issues in Chinese syntax within the generative framework, w
 
 ## Personal
 
-My Chinese name is pronounced as \[ʋei35 y214 jɑŋ35\]. You can also call me Isaac.
+My Chinese name is pronounced as \[ʋei<sup>35</sup> y<sup>214</sup> jɑŋ<sup>35</sup>\]. You can also call me Isaac.
