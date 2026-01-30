@@ -1,0 +1,58 @@
+<nav class="main-nav">
+  <div class="nav-container">
+    <div class="nav-links">
+      <a href="{{ '/' | relative_url }}" class="nav-item {% if page.url == '/' %}active{% endif %}">Home</a>
+      <a href="{{ '/papers/' | relative_url }}" class="nav-item {% if page.url contains 'papers' %}active{% endif %}">Papers</a>
+      <a href="{{ '/talks/' | relative_url }}" class="nav-item {% if page.url contains 'talks' %}active{% endif %}">Talks</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* 导航栏容器 */
+  .main-nav {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 40px;
+    padding: 10px 0;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 25px; /* 选项卡之间的间距 */
+  }
+
+  /* 基础选项卡样式 */
+  .nav-item {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 5px 0;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; /* 预留底边框位置，防止抖动 */
+  }
+
+  /* 悬停效果 */
+  .nav-item:hover {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  /* 当前页面高亮样式 (Active State) */
+  .nav-item.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
+
+  /* 响应式：手机端自动调整 */
+  @media (max-width: 600px) {
+    .nav-links { gap: 15px; }
+    .nav-item { font-size: 1rem; }
+  }
+</style>
