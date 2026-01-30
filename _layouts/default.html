@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US, zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    
+    <style>
+        /* 基础样式：学术派风格 */
+        body {
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px; /* 限制宽度，方便阅读 */
+            margin: 0 auto;   /* 居中显示 */
+            padding: 40px 20px;
+        }
+
+        /* 标题样式 */
+        h1, h2, h3 { color: #2c3e50; }
+        
+        /* 链接样式 */
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* 内容容器 */
+        .content { margin-top: 20px; }
+
+        /* 页脚样式 */
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        {% include nav.html %}
+    </header>
+
+    <main class="content">
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 {{ site.title }}. Powered by GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
