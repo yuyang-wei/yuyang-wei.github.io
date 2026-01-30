@@ -1,6 +1,5 @@
 ---
 layout: default
-title:
 ---
 
 Hi! I am a third year PhD student at [Leiden University Centre for Linguistics](https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics), advised by [Professor Rint Sybesma](https://www.universiteitleiden.nl/en/staffmembers/rint-sybesma) and [Dr. Zhaole Yang](https://www.universiteitleiden.nl/en/staffmembers/zhaole-yang).
