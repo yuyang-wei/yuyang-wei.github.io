@@ -1,2 +1,26 @@
+# 基础信息
 title: Yuyang Wei
-description:
+description: 
+url: "https://yuyang-wei.github.io" # 你的网站域名
+baseurl: "" # 如果是个人主页，通常留空
+
+# 个人社交信息 (自定义变量)
+email: "y(dot)wei(at)hum(dot)leidenuniv(dot)nl"
+
+# 网站构建设置
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# 自定义导航栏数据
+navigation:
+  - title: Home
+    url: /
+  - title: Papers
+    url: /papers/
+  - title: Talks
+    url: /talks/
+    
