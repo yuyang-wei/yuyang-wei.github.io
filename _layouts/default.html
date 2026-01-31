@@ -139,5 +139,53 @@ a:hover {
         <p>&copy; 2026 {{ site.title }}. Powered by GitHub Pages.</p>
     </footer>
 
+    <script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const themeMenu = document.getElementById('theme-menu');
+  const options = document.querySelectorAll('.theme-option');
+
+  // 1. 获取主题逻辑
+  function getPreferredTheme() {
+    const saved = localStorage.getItem('theme');
+    if (saved && saved !== 'auto') return saved;
+    
+    // 自动模式逻辑：检查时间 (19:00 - 06:00) 或 系统偏好
+    const hour = new Date().getHours();
+    const isNight = hour >= 19 || hour <= 6;
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    return isNight || prefersDark ? 'dark' : 'light';
+  }
+
+  // 2. 设置主题
+  function setTheme(theme, save = true) {
+    const actualTheme = (theme === 'auto') ? getPreferredTheme() : theme;
+    document.documentElement.setAttribute('data-theme', actualTheme);
+    if (save) localStorage.setItem('theme', theme);
+    
+    // 更新图标
+    const icons = { light: '☀️', dark: '🌙', auto: '🌓' };
+    document.getElementById('theme-icon').innerText = icons[theme] || '🌓';
+  }
+
+  // 3. 事件监听
+  toggleBtn.addEventListener('click', () => themeMenu.classList.toggle('show'));
+
+  options.forEach(opt => {
+    opt.addEventListener('click', () => {
+      const theme = opt.getAttribute('data-theme');
+      setTheme(theme);
+      themeMenu.classList.remove('show');
+    });
+  });
+
+  // 点击外部关闭菜单
+  window.onclick = (e) => {
+    if (!e.target.closest('#theme-toggle')) themeMenu.classList.remove('show');
+  }
+
+  // 初始化
+  setTheme(localStorage.getItem('theme') || 'auto', false);
+</script>
 </body>
 </html>
