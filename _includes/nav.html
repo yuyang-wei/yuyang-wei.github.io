@@ -48,7 +48,7 @@
   .nav-brand {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #003366; /* 使用你的学术暗蓝色 */
+    color: var(--nav-active);
     text-decoration: none;
   }
 
@@ -60,7 +60,7 @@
 
   /* 基础选项卡样式 */
   .nav-item {
-    color: #555;
+    color: var(--nav-text);
     text-decoration: none;
     font-weight: 500;
     padding: 5px 0;
@@ -71,9 +71,9 @@
 
   /* 悬停效果 */
   .nav-item:hover, .nav-item.active {
-    color: #003366;
+    color: var(--nav-active);
     text-decoration: none; /* 取消悬停的下划线 */
-    border-bottom: 2px solid #003366;
+    border-bottom: 2px solid var(--nav-active);
   }
 
   /* 响应式适配：手机端 */
