@@ -19,6 +19,7 @@
     --nav-text: #555555;      /* 亮色模式下的导航文字 */
     --nav-active: #003366;    /* 亮色模式下的激活/暗蓝色 */
     --border-color: #e0e0e0;
+    --profile-border: #f0f0f0; /* 日间模式头像边框 */
   }
 
   /* 深色模式下的变量值 */
@@ -31,6 +32,7 @@
   --nav-active: #80bfff;     /* 激活状态：提高亮度和饱和度的蓝色，在黑色背景上更醒目 */
   --nav-bg: rgba(18, 18, 18, 0.9); 
   --border-color: #333;
+    --profile-border: #333333; /* 暗色模式头像边框 */
   }
         
         /* 应用变量 */
@@ -97,7 +99,7 @@ a:hover {
     border-radius: 50%;    /* 圆形头像，如果想要方中带圆，改为 10% */
     object-fit: cover;    /* 确保图片不被拉伸 */
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 轻轻的阴影 */
-    border: 3px solid #f0f0f0;
+    border: 3px solid var(--profile-border); /* 使用变量！ */
 }
 
 /* 简介文字样式 */
