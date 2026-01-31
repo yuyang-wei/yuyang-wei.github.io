@@ -6,6 +6,17 @@
       <a href="{{ '/' | relative_url }}" class="nav-item {% if page.url == '/' %}active{% endif %}">Home</a>
       <a href="{{ '/papers/' | relative_url }}" class="nav-item {% if page.url contains 'papers' %}active{% endif %}">Papers</a>
       <a href="{{ '/talks/' | relative_url }}" class="nav-item {% if page.url contains 'talks' %}active{% endif %}">Talks</a>
+
+      <div class="theme-switch-wrapper">
+        <button id="theme-toggle" title="Theme">
+          <span id="theme-icon">🌓</span>
+          <div id="theme-menu" class="theme-menu">
+            <div class="theme-option" data-theme="light">☀️ Light</div>
+            <div class="theme-option" data-theme="dark">🌙 Dark</div>
+            <div class="theme-option" data-theme="auto">🌓 Auto</div>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </nav>
@@ -70,4 +81,21 @@
     .nav-container { flex-direction: column; gap: 10px; }
     .nav-links { gap: 12px; }
   }
+
+  /* 按钮及下拉菜单基础样式 */
+  .theme-switch-wrapper { position: relative; display: flex; align-items: center; }
+  #theme-toggle {
+    background: none; border: 1px solid #ccc; border-radius: 5px;
+    cursor: pointer; padding: 5px 8px; font-size: 1rem; color: var(--text-color);
+  }
+  .theme-menu {
+    display: none; position: absolute; top: 100%; right: 0;
+    background: var(--bg-color); border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-radius: 5px; z-index: 1001;
+  }
+  .theme-menu.show { display: block; }
+  .theme-option {
+    padding: 8px 15px; cursor: pointer; white-space: nowrap; color: var(--text-color);
+  }
+  .theme-option:hover { background: #f0f0f0; color: #000; }
 </style>
