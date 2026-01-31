@@ -23,13 +23,14 @@
 
   /* 深色模式下的变量值 */
   [data-theme="dark"] {
-    --bg-color: #1a1a1a;
-    --text-color: #e0e0e0;
+    --bg-color: #121212;       /* 更深邃的黑色 */
+    --text-color: #e0e0e0;     /* 浅灰色文字，不刺眼 */
     --link-color: #4db8ff; /* 深色背景下链接亮一点 */
-    --nav-bg: rgba(26, 26, 26, 0.95);
-    --nav-text: #aaaaaa;      /* 深色模式下的导航文字（浅灰） */
-    --nav-active: #4db8ff;    /* 深色模式下的激活色（亮蓝） */
-    --border-color: #444;
+    /* 导航栏专用 */
+  --nav-text: #b0b0b0;       /* 未激活状态：中灰色 */
+  --nav-active: #80bfff;     /* 激活状态：提高亮度和饱和度的蓝色，在黑色背景上更醒目 */
+  --nav-bg: rgba(18, 18, 18, 0.9); 
+  --border-color: #333;
   }
         
         /* 应用变量 */
