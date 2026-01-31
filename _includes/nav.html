@@ -28,11 +28,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.95); /* 半透明白色背景 */
+    background-color: var(--nav-bg);
     backdrop-filter: blur(5px); /* 磨砂玻璃效果 */
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--border-color);
     z-index: 1000; /* 确保在最上层 */
     padding: 12px 0;
+    transition: background-color 0.3s, border-bottom 0.3s; /* 平滑过渡 */
   }
 
   .nav-container {
@@ -56,6 +57,7 @@
   .nav-links {
     display: flex;
     gap: 20px;
+    align-items: center; /* 确保切换按钮垂直居中 */
   }
 
   /* 基础选项卡样式 */
@@ -86,18 +88,43 @@
 
   /* 按钮及下拉菜单基础样式 */
   .theme-switch-wrapper { position: relative; display: flex; align-items: center; }
+  
   #theme-toggle {
-    background: none; border: 1px solid #ccc; border-radius: 5px;
-    cursor: pointer; padding: 5px 8px; font-size: 1rem; color: var(--text-color);
+    background: none; 
+    /* 修改点：边框随主题变化 */
+    border: 1px solid var(--border-color); 
+    border-radius: 5px;
+    cursor: pointer; 
+    padding: 5px 8px; 
+    font-size: 1rem; 
+    color: var(--text-color);
   }
+
   .theme-menu {
-    display: none; position: absolute; top: 100%; right: 0;
-    background: var(--bg-color); border: 1px solid #ddd;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-radius: 5px; z-index: 1001;
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    right: 0;
+    background: var(--bg-color); 
+    /* 修改点：边框随主题变化 */
+    border: 1px solid var(--border-color); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    border-radius: 5px; 
+    z-index: 1001;
   }
+
   .theme-menu.show { display: block; }
+
   .theme-option {
-    padding: 8px 15px; cursor: pointer; white-space: nowrap; color: var(--text-color);
+    padding: 8px 15px; 
+    cursor: pointer; 
+    white-space: nowrap; 
+    color: var(--text-color);
   }
-  .theme-option:hover { background: #f0f0f0; color: #000; }
+
+  /* 修改点：悬停时的背景也要随主题变化 */
+  .theme-option:hover { 
+    background: var(--border-color); 
+    color: var(--nav-active); 
+  }
 </style>
