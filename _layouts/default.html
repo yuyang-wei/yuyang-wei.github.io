@@ -19,9 +19,17 @@
         /* 标题样式 */
         h1, h2, h3 { color: #2c3e50; }
         
-        /* 链接样式 */
-        a { color: #007bff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        /* 链接样式 - 已调至暗蓝色 */
+a {
+    color: #003366;           /* 这是一种经典的学术深蓝色 */
+    text-decoration: none;    /* 默认去掉下划线，让页面更干净 */
+    transition: color 0.2s;    /* 颜色切换时更柔和 */
+}
+
+a:hover {
+    color: #0056b3;           /* 鼠标悬停时稍微变亮，给用户反馈 */
+    text-decoration: underline; /* 悬停时显示下划线 */
+}
 
         /* 内容容器 */
         .content { margin-top: 20px; }
