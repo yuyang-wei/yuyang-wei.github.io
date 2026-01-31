@@ -144,10 +144,16 @@ a:hover {
         {{ content }}
     </main>
 
-    <footer>
-        <p>&copy; 2026 {{ site.title }}. Powered by GitHub Pages.</p>
-    </footer>
-
+<footer>
+  <p>
+      Email: {{ site.email }}
+    &copy; {{ "now" | date: "%Y" }} {{ site.title }}. Powered by GitHub Pages.
+  </p>
+  <p style="font-size: 0.85em; opacity: 0.8;">
+    Last updated: {{ site.time | date: "%B %d, %Y" }}
+  </p>
+</footer>
+    
     <script>
   const toggleBtn = document.getElementById('theme-toggle');
   const themeMenu = document.getElementById('theme-menu');
