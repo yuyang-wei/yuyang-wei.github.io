@@ -52,6 +52,53 @@ a:hover {
             color: #777;
             text-align: center;
         }
+
+        /* 个人资料容器：使用 Flex 布局 */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* 头像样式 */
+.profile-image img {
+    width: 200px;         /* 头像宽度 */
+    height: 200px;        /* 头像高度 */
+    border-radius: 50%;    /* 圆形头像，如果想要方中带圆，改为 10% */
+    object-fit: cover;    /* 确保图片不被拉伸 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 轻轻的阴影 */
+    border: 3px solid #f0f0f0;
+}
+
+/* 简介文字样式 */
+.profile-bio {
+    flex: 1; /* 占据剩余空间 */
+}
+
+.profile-bio h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* 社交链接按钮化（可选） */
+.social-links a {
+    font-weight: 500;
+}
+
+/* 响应式适配：手机上改为上下排列 */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
     </style>
 </head>
 <body>
