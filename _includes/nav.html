@@ -1,5 +1,7 @@
-<nav class="main-nav">
+<nav class="navbar">
   <div class="nav-container">
+    <a href="{{ '/' | relative_url }}" class="nav-brand">{{ site.title }}</a>
+
     <div class="nav-links">
       <a href="{{ '/' | relative_url }}" class="nav-item {% if page.url == '/' %}active{% endif %}">Home</a>
       <a href="{{ '/papers/' | relative_url }}" class="nav-item {% if page.url contains 'papers' %}active{% endif %}">Papers</a>
@@ -9,50 +11,60 @@
 </nav>
 
 <style>
-  /* 导航栏容器 */
-  .main-nav {
+  /* 导航栏固定在顶部 */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95); /* 半透明白色背景 */
+    backdrop-filter: blur(5px); /* 磨砂玻璃效果 */
     border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 40px;
-    padding: 10px 0;
+    z-index: 1000; /* 确保在最上层 */
+    padding: 12px 0;
   }
 
   .nav-container {
+    max-width: 800px; /* 与正文宽度保持一致 */
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* 关键：左右两端对齐 */
     align-items: center;
   }
 
-  .nav-links {
-    display: flex;
-    gap: 25px; /* 选项卡之间的间距 */
+  /* 左侧 Brand 样式 */
+  .nav-brand {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #003366; /* 使用你的学术暗蓝色 */
+    text-decoration: none;
   }
 
-  /* 基础选项卡样式 */
+  /* 右侧链接容器 */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
   .nav-item {
     color: #555;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.1rem;
     padding: 5px 0;
-    transition: all 0.3s ease;
-    border-bottom: 2px solid transparent; /* 预留底边框位置，防止抖动 */
+    transition: 0.2s;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
   }
 
-  /* 悬停效果 */
-  .nav-item:hover {
-    color: #003366;
-    text-decoration: none;
-  }
-
-  /* 当前页面高亮样式 (Active State) */
-  .nav-item.active {
+  .nav-item:hover, .nav-item.active {
     color: #003366;
     border-bottom: 2px solid #003366;
   }
 
-  /* 响应式：手机端自动调整 */
+  /* 响应式适配：手机端 */
   @media (max-width: 600px) {
-    .nav-links { gap: 15px; }
-    .nav-item { font-size: 1rem; }
+    .nav-container { flex-direction: column; gap: 10px; }
+    .nav-links { gap: 12px; }
   }
 </style>
