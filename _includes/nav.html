@@ -3,9 +3,11 @@
     <a href="{{ '/' | relative_url }}" class="nav-brand">{{ site.title }}</a>
 
     <div class="nav-links">
-      <a href="{{ '/' | relative_url }}" class="nav-item {% if page.url == '/' %}active{% endif %}">Home</a>
-      <a href="{{ '/papers/' | relative_url }}" class="nav-item {% if page.url contains 'papers' %}active{% endif %}">Papers</a>
-      <a href="{{ '/talks/' | relative_url }}" class="nav-item {% if page.url contains 'talks' %}active{% endif %}">Talks</a>
+      {% for item in site.navigation %}
+    <a href="{{ item.url | relative_url }}" class="nav-item {% if page.url == item.url %}active{% endif %}">
+      {{ item.title }}
+    </a>
+  {% endfor %}
 
       <div class="theme-switch-wrapper">
         <button id="theme-toggle" title="Theme">
