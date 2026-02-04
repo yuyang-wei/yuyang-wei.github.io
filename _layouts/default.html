@@ -1,234 +1,223 @@
 <!DOCTYPE html>
 <html lang="en-US, zh-CN">
-    <head>
-        <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="keywords" content="Yuyang Wei, Linguistics, PhD, Leiden University, Syntax">
+    <meta name="description" content="Personal academic website of Yuyang Wei, a PhD student in Linguistics at Leiden University.">
+    <meta name="author" content="Yuyang Wei">
+    
+    <meta property="og:title" content="Yuyang Wei | Academic Website">
+<meta property="og:description" content="PhD Student in Linguistics at Leiden University specializing.">
+<meta property="og:image" content="https://yuyang-wei.github.io/assets/img/me.jpg">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>
+  {% if page.title %}
+    {{ page.title }} | {{ site.title }}
+  {% else %}
+    {{ site.title }}
+  {% endif %}
+</title>
 
-        <meta
-            name="keywords"
-            content="Yuyang Wei, Linguistics, PhD, Leiden University, Syntax"
-        />
-        <meta
-            name="description"
-            content="Personal academic website of Yuyang Wei, a PhD student in Linguistics at Leiden University."
-        />
-        <meta name="author" content="Yuyang Wei" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 定义颜色变量 */
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #003366; /* 你的学术暗蓝 */
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --nav-text: #555555;      /* 亮色模式下的导航文字 */
+    --nav-active: #003366;    /* 亮色模式下的激活/暗蓝色 */
+    --border-color: #e0e0e0;
+    --profile-border: #f0f0f0; /* 日间模式头像边框 */
+  }
 
-        <meta property="og:title" content="Yuyang Wei | Academic Website" />
-        <meta
-            property="og:description"
-            content="PhD Student in Linguistics at Leiden University specializing."
-        />
-        <meta
-            property="og:image"
-            content="https://yuyang-wei.github.io/assets/img/me.jpg"
-        />
+  /* 深色模式下的变量值 */
+  [data-theme="dark"] {
+    --bg-color: #121212;       /* 更深邃的黑色 */
+    --text-color: #e0e0e0;     /* 浅灰色文字，不刺眼 */
+    --link-color: #4db8ff; /* 深色背景下链接亮一点 */
+    /* 导航栏专用 */
+  --nav-text: #b0b0b0;       /* 未激活状态：中灰色 */
+  --nav-active: #80bfff;     /* 激活状态：提高亮度和饱和度的蓝色，在黑色背景上更醒目 */
+  --nav-bg: rgba(18, 18, 18, 0.9); 
+  --border-color: #333;
+    --profile-border: #333333; /* 暗色模式头像边框 */
+  }
+        
+        /* 应用变量 */
+        body {
+            /* 优先使用 Roboto，如果加载失败则使用系统无衬线字体 */
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s; /* 平滑过渡 */
+            max-width: 800px; /* 限制宽度，方便阅读 */
+            margin: 0 auto;   /* 居中显示 */
+            padding: 40px 20px;
+            padding-top: 100px; /* 增加这一行，数值要大于导航栏的高度 */
+        }
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        /* 标题样式 */
+h1, h2, h3 { 
+    font-weight: 700; /* 建议给标题设置更重的字重 */
+    color: var(--text-color);
+}
+        
+        /* 链接样式 */
+a {
+    color: var(--link-color);
+    text-decoration: none;    /* 默认去掉下划线，让页面更干净 */
+    transition: color 0.2s;    /* 颜色切换时更柔和 */
+}
 
-        <title>
-            {% if page.title %} {{ page.title }} | {{ site.title }} {% else %}
-            {{ site.title }} {% endif %}
-        </title>
+a:hover {
+    color: #0056b3;           /* 鼠标悬停时稍微变亮，给用户反馈 */
+    text-decoration: underline; /* 悬停时显示下划线 */
+}
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-        />
+        /* 内容容器 */
+        .content { margin-top: 20px; }
 
-        <style>
-            /* 定义颜色变量 */
-            :root {
-                --bg-color: #ffffff;
-                --text-color: #333333;
-                --link-color: #003366; /* 你的学术暗蓝 */
-                --nav-bg: rgba(255, 255, 255, 0.95);
-                --nav-text: #555555; /* 亮色模式下的导航文字 */
-                --nav-active: #003366; /* 亮色模式下的激活/暗蓝色 */
-                --border-color: #e0e0e0;
-                --profile-border: #f0f0f0; /* 日间模式头像边框 */
-            }
+        /* 页脚样式 */
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+        }
 
-            /* 深色模式下的变量值 */
-            [data-theme="dark"] {
-                --bg-color: #121212; /* 更深邃的黑色 */
-                --text-color: #e0e0e0; /* 浅灰色文字，不刺眼 */
-                --link-color: #4db8ff; /* 深色背景下链接亮一点 */
-                /* 导航栏专用 */
-                --nav-text: #b0b0b0; /* 未激活状态：中灰色 */
-                --nav-active: #80bfff; /* 激活状态：提高亮度和饱和度的蓝色，在黑色背景上更醒目 */
-                --nav-bg: rgba(18, 18, 18, 0.9);
-                --border-color: #333;
-                --profile-border: #333333; /* 暗色模式头像边框 */
-            }
+        /* 个人资料容器：使用 Flex 布局 */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
 
-            /* 应用变量 */
-            body {
-                /* 优先使用 Roboto，如果加载失败则使用系统无衬线字体 */
-                font-family: "Roboto", -apple-system, BlinkMacSystemFont,
-                    "Segoe UI", Arial, sans-serif;
-                line-height: 1.6;
-                background-color: var(--bg-color);
-                color: var(--text-color);
-                transition: background-color 0.3s, color 0.3s; /* 平滑过渡 */
-                max-width: 800px; /* 限制宽度，方便阅读 */
-                margin: 0 auto; /* 居中显示 */
-                padding: 40px 20px;
-                padding-top: 100px; /* 增加这一行，数值要大于导航栏的高度 */
-            }
+/* 头像样式 */
+.profile-image img {
+    width: 200px;         /* 头像宽度 */
+    height: 200px;        /* 头像高度 */
+    border-radius: 50%;    /* 圆形头像，如果想要方中带圆，改为 10% */
+    object-fit: cover;    /* 确保图片不被拉伸 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 轻轻的阴影 */
+    border: 3px solid var(--profile-border); /* 使用变量！ */
+}
 
-            /* 标题样式 */
-            h1,
-            h2,
-            h3 {
-                font-weight: 700; /* 建议给标题设置更重的字重 */
-                color: var(--text-color);
-            }
+/* 简介文字样式 */
+.profile-bio {
+    flex: 1; /* 占据剩余空间 */
+}
 
-            /* 链接样式 */
-            a {
-                color: var(--link-color);
-                text-decoration: none; /* 默认去掉下划线，让页面更干净 */
-                transition: color 0.2s; /* 颜色切换时更柔和 */
-            }
+.profile-bio h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
 
-            a:hover {
-                color: #0056b3; /* 鼠标悬停时稍微变亮，给用户反馈 */
-                text-decoration: underline; /* 悬停时显示下划线 */
-            }
+/* 社交链接按钮化（可选） */
+.social-links a {
+    font-weight: 500;
+}
 
-            /* 内容容器 */
-            .content {
-                margin-top: 20px;
-            }
+/* 响应式适配：手机上改为上下排列 */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+}
 
-            /* 页脚样式 */
-            footer {
-                margin-top: 50px;
-                padding-top: 20px;
-                border-top: 1px solid #eee;
-                font-size: 0.9em;
-                color: #777;
-                text-align: center;
-            }
+/* 针对所有列表项目增加垂直间距 */
+li {
+	margin-bottom: 0.5rem; /* 你可以根据喜好调整数值，通常 0.5rem 到 1rem 比较合适 */
+}
+    </style>
+</head>
+<body>
 
-            /* 个人资料容器：使用 Flex 布局 */
-            .profile-container {
-                display: flex;
-                align-items: center;
-                gap: 40px;
-                margin-bottom: 40px;
-            }
+    <header>
+        {% include nav.html %}
+    </header>
 
-            /* 头像样式 */
-            .profile-image img {
-                width: 200px; /* 头像宽度 */
-                height: 200px; /* 头像高度 */
-                border-radius: 50%; /* 圆形头像，如果想要方中带圆，改为 10% */
-                object-fit: cover; /* 确保图片不被拉伸 */
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 轻轻的阴影 */
-                border: 3px solid var(--profile-border); /* 使用变量！ */
-            }
+    <main class="content">
+        {{ content }}
+    </main>
 
-            /* 简介文字样式 */
-            .profile-bio {
-                flex: 1; /* 占据剩余空间 */
-            }
+<footer>
+  <p>
+      Email: {{ site.email }}
+      </p>
+    <p>
+    &copy; {{ "now" | date: "%Y" }} {{ site.title }}. Powered by GitHub Pages.
+  </p>
+  <p style="font-size: 0.85em; opacity: 0.8;">
+    Last updated: {{ site.time | date: "%B %d, %Y" }}
+  </p>
+</footer>
+    
+    <script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const themeMenu = document.getElementById('theme-menu');
+  const options = document.querySelectorAll('.theme-option');
 
-            .profile-bio h1 {
-                margin-top: 0;
-                margin-bottom: 10px;
-            }
+  // 1. 获取主题逻辑
+  function getPreferredTheme() {
+    const saved = localStorage.getItem('theme');
+    if (saved && saved !== 'auto') return saved;
+    
+    // 自动模式逻辑：检查时间 (19:00 - 06:00) 或 系统偏好
+    const hour = new Date().getHours();
+    const isNight = hour >= 19 || hour <= 6;
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    return isNight || prefersDark ? 'dark' : 'light';
+  }
 
-            /* 社交链接按钮化（可选） */
-            .social-links a {
-                font-weight: 500;
-            }
+  // 2. 设置主题
+  function setTheme(theme, save = true) {
+    const actualTheme = (theme === 'auto') ? getPreferredTheme() : theme;
+    document.documentElement.setAttribute('data-theme', actualTheme);
+    if (save) localStorage.setItem('theme', theme);
+    
+    // 更新图标
+    const icons = { light: '☀️', dark: '🌙', auto: '🌓' };
+    document.getElementById('theme-icon').innerText = icons[theme] || '🌓';
+  }
 
-            /* 响应式适配：手机上改为上下排列 */
-            @media (max-width: 768px) {
-                .profile-container {
-                    flex-direction: column;
-                    text-align: center;
-                    gap: 20px;
-                }
+  // 3. 事件监听
+  toggleBtn.addEventListener('click', () => themeMenu.classList.toggle('show'));
 
-                .profile-image img {
-                    width: 150px;
-                    height: 150px;
-                }
-            }
+  options.forEach(opt => {
+    opt.addEventListener('click', () => {
+      const theme = opt.getAttribute('data-theme');
+      setTheme(theme);
+      themeMenu.classList.remove('show');
+    });
+  });
 
-            /* 针对所有列表项目增加垂直间距 */
-            li {
-                margin-bottom: 0.5rem; /* 你可以根据喜好调整数值，通常 0.5rem 到 1rem 比较合适 */
-            }
-        </style>
-    </head>
-    <body>
-        <header>{% include nav.html %}</header>
+  // 点击外部关闭菜单
+  window.onclick = (e) => {
+    if (!e.target.closest('#theme-toggle')) themeMenu.classList.remove('show');
+  }
 
-        <main class="content">{{ content }}</main>
-
-        <footer>
-            <p>Email: {{ site.email }}</p>
-            <p>
-                &copy; {{ "now" | date: "%Y" }} {{ site.title }}. Powered by
-                GitHub Pages.
-            </p>
-            <p style="font-size: 0.85em; opacity: 0.8">
-                Last updated: {{ site.time | date: "%B %d, %Y" }}
-            </p>
-        </footer>
-
-        <script>
-            const toggleBtn = document.getElementById('theme-toggle');
-            const themeMenu = document.getElementById('theme-menu');
-            const options = document.querySelectorAll('.theme-option');
-
-            // 1. 获取主题逻辑
-            function getPreferredTheme() {
-              const saved = localStorage.getItem('theme');
-              if (saved && saved !== 'auto') return saved;
-
-              // 自动模式逻辑：检查时间 (19:00 - 06:00) 或 系统偏好
-              const hour = new Date().getHours();
-              const isNight = hour >= 19 || hour <= 6;
-              const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-              return isNight || prefersDark ? 'dark' : 'light';
-            }
-
-            // 2. 设置主题
-            function setTheme(theme, save = true) {
-              const actualTheme = (theme === 'auto') ? getPreferredTheme() : theme;
-              document.documentElement.setAttribute('data-theme', actualTheme);
-              if (save) localStorage.setItem('theme', theme);
-
-              // 更新图标
-              const icons = { light: '☀️', dark: '🌙', auto: '🌓' };
-              document.getElementById('theme-icon').innerText = icons[theme] || '🌓';
-            }
-
-            // 3. 事件监听
-            toggleBtn.addEventListener('click', () => themeMenu.classList.toggle('show'));
-
-            options.forEach(opt => {
-              opt.addEventListener('click', () => {
-                const theme = opt.getAttribute('data-theme');
-                setTheme(theme);
-                themeMenu.classList.remove('show');
-              });
-            });
-
-            // 点击外部关闭菜单
-            window.onclick = (e) => {
-              if (!e.target.closest('#theme-toggle')) themeMenu.classList.remove('show');
-            }
-
-            // 初始化
-            setTheme(localStorage.getItem('theme') || 'auto', false);
-        </script>
-    </body>
+  // 初始化
+  setTheme(localStorage.getItem('theme') || 'auto', false);
+</script>
+</body>
 </html>
