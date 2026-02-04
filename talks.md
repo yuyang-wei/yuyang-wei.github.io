@@ -19,5 +19,5 @@ permalink: /talks/
 
 ## Before 2025
 
-* 2023. 广西象州官话句末助词“去”的句法分析 \[Syntactic analysis of the sentence-final particle _kʰə²⁴_ in Xiangzhou Mandarin\]. [IACL-29@MUST](https://www.must.edu.mo/en/news/51676-article0527144247-e). [with [Qingwen Zhang](https://clal.gdufs.edu.cn/info/1272/1811.htm)]
-* 2022. The syntax of the sentence-final particle _kʰə²⁴_ in Xiangzhou Mandarin. [第三届现代汉语句末助词研讨会](https://clal.gdufs.edu.cn/info/1034/5698.htm) \[Third Workshop on Sentence Final Particles in Modern Chinese\]@GDUFS. [with [Qingwen Zhang](https://clal.gdufs.edu.cn/info/1272/1811.htm)]
+*  2023. 广西象州官话句末助词“去”的句法分析 \[Syntactic analysis of the sentence-final particle _kʰə²⁴_ in Xiangzhou Mandarin\]. [IACL-29@MUST](https://www.must.edu.mo/en/news/51676-article0527144247-e). [with [Qingwen Zhang](https://clal.gdufs.edu.cn/info/1272/1811.htm)]
+*  2022. The syntax of the sentence-final particle _kʰə²⁴_ in Xiangzhou Mandarin. [第三届现代汉语句末助词研讨会](https://clal.gdufs.edu.cn/info/1034/5698.htm) \[Third Workshop on Sentence Final Particles in Modern Chinese\]@GDUFS. [with [Qingwen Zhang](https://clal.gdufs.edu.cn/info/1272/1811.htm)]
