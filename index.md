@@ -19,6 +19,6 @@
 
 ## Research interests
 
-* generative grammar; syntax; comparative grammar; Chinese linguistics
-* aspectual particles in the [inner aspectual domain](https://doi.org/10.1163/2210-7363_ecll_COM_000294)
+* generative grammar; syntax; Chinese linguistics
+* the syntax of [inner aspect](https://doi.org/10.1163/2210-7363_ecll_COM_000294)
 * sentence final particles
