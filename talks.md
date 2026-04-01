@@ -9,7 +9,7 @@ permalink: /talks/
 ## 2026
 
 * Modal phrase reduplication in Xiangzhou Mandarin. IACL-32@GDUFS, June 12–14.
-* Modal phrase reduplication in Xiangzhou Mandarin. Invited talk at the [Chinese Linguistics in Leiden (ChiLL) series](https://www.universiteitleiden.nl/en/preview/events/2026/03/modal-phrase-reduplication-in-xiangzhou-mandarin), Leiden University, March 11.
+* Modal phrase reduplication in Xiangzhou Mandarin. Invited talk at the [Chinese Linguistics in Leiden (ChiLL) series](https://www.universiteitleiden.nl/en/events/2026/03/modal-phrase-reduplication-in-xiangzhou-mandarin), Leiden University, March 11.
 
 ## 2025
 
