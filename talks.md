@@ -8,14 +8,15 @@ permalink: /talks/
 
 ## 2026
 
-* Modal phrase reduplication in Xiangzhou Mandarin. IACL-32@GDUFS, June 12–14.
+* Reduplication of prospective auxiliary phrase in Xiangzhou Mandarin. EACL-13@Campus Condorcet.
+* Reduplication of prospective auxiliary phrase in Xiangzhou Mandarin. IACL-32@GDUFS.
 * Modal phrase reduplication in Xiangzhou Mandarin. Invited talk at the [Chinese Linguistics in Leiden (ChiLL) series](https://www.universiteitleiden.nl/en/events/2026/03/modal-phrase-reduplication-in-xiangzhou-mandarin), Leiden University, March 11.
 
 ## 2025
 
 * On the syntax of the sentence final particle _ne⁴⁴_ in Xiangzhou Mandarin. [ICFL-2025@GDUFS](https://clal.gdufs.edu.cn/info/1036/6664.htm).
 * The cartography of sentence final particles in Japanese. [IWSC-6@CUHK](https://www.cuhk.edu.hk/ics/clrc/iwsc6/). \[with Renfang Zhang\]
-* Wei, Yuyang. 2025. The syntacticization of discourse and sentence final particles in Chinese: evidence from _uəi⁵⁵_ in Xiangzhou Mandarin. [IACL-31@UNIVE](https://www.unive.it/web/en/8400/home#c83042).
+* The syntacticization of discourse and sentence final particles in Chinese: evidence from _uəi⁵⁵_ in Xiangzhou Mandarin. [IACL-31@UNIVE](https://www.unive.it/web/en/8400/home#c83042).
 
 ## 2023
 
