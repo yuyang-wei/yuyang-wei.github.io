@@ -8,8 +8,8 @@ permalink: /talks/
 
 ## 2026
 
-* Reduplication of prospective auxiliary phrase in Xiangzhou Mandarin. EACL-13@Campus Condorcet.
-* Reduplication of prospective auxiliary phrase in Xiangzhou Mandarin. IACL-32@GDUFS.
+* On the Syntax of Prospective Auxiliary Phrase Reduplication in Xiangzhou Mandarin. [EACL-13](https://eacl-13.sciencesconf.org/page/program_page?lang=en), Paris.
+* Reduplication of prospective auxiliary phrase in Xiangzhou Mandarin. [IACL-32@GDUFS](https://clal.gdufs.edu.cn/info/1036/7455.htm).
 * Modal phrase reduplication in Xiangzhou Mandarin. Invited talk at the [Chinese Linguistics in Leiden (ChiLL) series](https://www.universiteitleiden.nl/en/events/2026/03/modal-phrase-reduplication-in-xiangzhou-mandarin), Leiden University, March 11.
 
 ## 2025
