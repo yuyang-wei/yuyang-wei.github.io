@@ -14,7 +14,7 @@ permalink: /talks/
 
 ## 2025
 
-* WEI, Yuyang. 2025. On the syntax of the sentence final particle _ne⁴⁴_ in Xiangzhou Mandarin. Paper presented at the [International Conference on Formal Linguistics 2025 (ICFL 2025)(https://clal.gdufs.edu.cn/info/1036/6664.htm), Guangdong University of Foreign Studies, Guangzhou, Nov. 8–9.
+* WEI, Yuyang. 2025. On the syntax of the sentence final particle _ne⁴⁴_ in Xiangzhou Mandarin. Paper presented at the [International Conference on Formal Linguistics 2025 (ICFL 2025)](https://clal.gdufs.edu.cn/info/1036/6664.htm), Guangdong University of Foreign Studies, Guangzhou, Nov. 8–9.
 * WEI, Yuyang, and Renfang Zhang. 2025. The cartography of sentence final particles in Japanese. Paper presented at the [6th International Workshop on Syntactic Cartography (IWSC-6)](https://www.cuhk.edu.hk/ics/clrc/iwsc6/), The Chinese University of Hong Kong, Hong Kong, Oct. 31–Nov. 1.
 * WEI, Yuyang. 2025. The syntacticization of discourse and sentence final particles in Chinese: evidence from _uəi⁵⁵_ in Xiangzhou Mandarin. Paper presented at the [31st Annual Conference of the International Association of Chinese Linguistics (IACL-31)](https://www.unive.it/web/en/8400/home#c83042), Ca’ Foscari University of Venice, Venice, July 2–4.
 
