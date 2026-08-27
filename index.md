@@ -17,8 +17,13 @@
 * MA in Linguistics and Applied Linguistics, [Guangdong University of Foreign Studies](https://english.gdufs.edu.cn), 2023
 * BA in English, [Nankai University](https://en.nankai.edu.cn), 2020
 
-## Research interests
+## Research Interests
 
-* generative grammar; syntax; Chinese linguistics
-* the syntax of [inner aspect](https://doi.org/10.1163/2210-7363_ecll_COM_000294)
-* sentence final particles
+* Generative grammar; Syntax; Chinese linguistics
+* The syntax of [Inner Aspect](https://doi.org/10.1163/2210-7363_ecll_COM_000294) in [Sinitic languages](https://en.wikipedia.org/wiki/Sinitic_languages)
+* Sentence final particles
+* The syntacticization of discourse
+
+## Academic Services
+
+* Editorial Board Member, [Student Organization of Linguistics in Europe (SOLE)](https://www.universiteitleiden.nl/en/events/series/sole), 2026–now
