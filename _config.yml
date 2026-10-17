@@ -19,6 +19,8 @@ exclude:
 navigation:
   - title: Home
     url: /
+  - title: TEAL-16
+    url: /TEAL-16/
   - title: Papers
     url: /papers/
   - title: Talks
