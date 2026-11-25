@@ -5,7 +5,7 @@
 
   <div class="profile-bio">
     <h1>Yuyang Wei (韦雨阳)</h1>
-    <p>Hi! I am a third year PhD student at <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">Leiden University Centre for Linguistics</a>, advised by <a href="https://www.universiteitleiden.nl/en/staffmembers/rint-sybesma">Professor Rint Sybesma</a> and <a href="https://www.universiteitleiden.nl/en/staffmembers/zhaole-yang">Dr. Zhaole Yang</a>.</p>
+    <p>Welcome to my website. I am a 4th year PhD student at <a href="https://www.universiteitleiden.nl/en/humanities/leiden-university-centre-for-linguistics">Leiden University Centre for Linguistics</a>, advised by <a href="https://www.universiteitleiden.nl/en/staffmembers/rint-sybesma">Professor Rint Sybesma</a> and <a href="https://www.universiteitleiden.nl/en/staffmembers/zhaole-yang">Dr. Zhaole Yang</a>.</p>
     <p>Email: {{ site.email }}</p>
     <p><a href="https://academictree.org/linguistics/tree.php?pid=948433#">My academic tree</a></p>
   </div>
